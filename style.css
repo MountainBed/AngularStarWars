@@ -25,11 +25,10 @@ html {
 .person-attribute {
   color: #ffab00;
 }
-
+/*
 .person-card {
-  max-width: 20%;
   margin: 0 auto;
-}
+} */
 
 .year-note {
   font-size: 10px;
