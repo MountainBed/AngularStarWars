@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="StarWarsApp">
+
 <head>
   <title>Star Wars</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+
   <!-- AngularJS -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
   <script type="text/javascript" src="https://code.angularjs.org/1.7.2/angular-route.min.js"></script>
+  <script type="text/javascript" src="https://code.angularjs.org/1.7.2/angular-animate.min.js"></script>
 
   <!-- custom files -->
   <script type="text/javascript" src="app.js"></script>
-
+  <link rel="stylesheet" href="style.css">
   <!-- controllers -->
   <script type="text/javascript" src="controllers/main.js"></script>
 
-</head>
-<body>
+  <!-- services -->
+  <script type="text/javascript" src="services/swapi.js"></script>
 
-  <div ng-view>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper main-nav">
+      <a href="#" class="brand-logo center" id="star-wars">Star Wars</a>
+    </div>
+  </nav>
+
+  <div class="main-information" ng-view>
 
   </div>
 
 </body>
+
 </html>

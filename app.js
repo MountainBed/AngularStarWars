@@ -1,4 +1,7 @@
-var angularApp = angular.module('StarWarsApp', ['ngRoute']);
+var angularApp = angular.module('StarWarsApp', [
+  'ngRoute',
+  'swapi',
+]);
 
 angularApp.config(['$routeProvider',
   function($routeProvider){

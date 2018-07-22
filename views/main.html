@@ -1,2 +1,24 @@
-<h1>{{heading}}</h1>
-<p>{{message}}</p>
+<div class="container">
+  <br>
+  <div class="row navigation">
+      <a ng-click="previousPage()" ng-touch="previousPage()"  ng-disabled="!isPrevious" class="orange darken-4 btn left"><span class="valign-wrapper"><i class="material-icons">chevron_left</i>Previous</a>
+      <a ng-click="nextPage()" ng-touch="nextPage()" ng-disabled="!isNext" class="orange darken-4 btn right"><span class="valign-wrapper center-align">Next<i class="material-icons">chevron_right</i></span></a>
+  </div>
+    <table class="highlight display-table center">
+    <thead>
+      <th class="center">Name</th>
+      <th class="center">Birth Year</th>
+      <th class="center">View More</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="person in data">
+        <td>{{person.name}}</td>
+        <td>{{person.birth_year}}</td>
+        <td class="center">
+            <a class="amber accent-4 waves-effect waves-light btn">View more information</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
