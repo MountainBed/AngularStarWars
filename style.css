@@ -3,7 +3,6 @@ html {
   height: 100%;
 }
 
-
 .main-nav {
   background: black;
 }
@@ -13,9 +12,25 @@ html {
 }
 
 .display-table {
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 
-.navigation {
+.navigation {}
+
+.people-link {
+  color: #ffab00;
+}
+
+.person-attribute {
+  color: #ffab00;
+}
+
+.person-card {
+  max-width: 20%;
+  margin: 0 auto;
+}
+
+.year-note {
+  font-size: 10px;
 }

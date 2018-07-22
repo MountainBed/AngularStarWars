@@ -24,22 +24,21 @@
   <script type="text/javascript" src="app.js"></script>
   <link rel="stylesheet" href="style.css">
   <!-- controllers -->
-  <script type="text/javascript" src="controllers/main.js"></script>
 
+  <script type="text/javascript" src="controllers/headermain.js"></script>
+  <script type="text/javascript" src="controllers/main.js"></script>
+  <script type="text/javascript" src="controllers/details.js"></script>
   <!-- services -->
   <script type="text/javascript" src="services/swapi.js"></script>
 
 </head>
 
 <body>
-  <nav>
-    <div class="nav-wrapper main-nav">
-      <a href="#" class="brand-logo center" id="star-wars">Star Wars</a>
-    </div>
-  </nav>
+    <headermain>
 
-  <div class="main-information" ng-view>
+    </headermain>
 
+  <div ng-view>
   </div>
 
 </body>

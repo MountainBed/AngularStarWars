@@ -2,6 +2,7 @@ angularApp.controller('MainCtrl', ['$scope', 'SwapiService', function ($scope, S
   $scope.page = 1;
   $scope.isPrevious = false;
   $scope.isNext = false;
+  $scope.error = false;
 
   SwapiService.peoplePage($scope.page)
     .then(function (data) {
@@ -40,7 +41,7 @@ angularApp.controller('MainCtrl', ['$scope', 'SwapiService', function ($scope, S
 
     });
 
-  // General function to retrieve page give page number
+  // General function to retrieve page given page number
   getPage = function (page) {
     SwapiService.peoplePage($scope.page)
       .then(function (data) {
@@ -84,14 +85,12 @@ angularApp.controller('MainCtrl', ['$scope', 'SwapiService', function ($scope, S
 
   // Load next page on button click
   $scope.nextPage = function () {
-    console.log('clicked');
     $scope.page++;
     getPage($scope.page);
   };
 
   // Load previous page on button click
   $scope.previousPage = function () {
-    console.log('clicked');
     $scope.page--;
     getPage($scope.page);
   };
