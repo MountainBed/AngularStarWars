@@ -6,7 +6,7 @@ services.factory('SwapiService', ['$http',
 
     Swapi.domain = 'https://swapi.co/api';
 
-    // List of up to 10 people in star wars universe
+    // List of up to 10 people in star wars universe based on pages provided by API
     Swapi.peoplePage = function (page) {
       var path = '/people/?page=' + page;
       var url = Swapi.domain + path;

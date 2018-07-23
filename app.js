@@ -5,7 +5,6 @@ var angularApp = angular.module('StarWarsApp', [
 
 angularApp.component('headermain', {
   templateUrl: 'templates/headermain.html',
-  controller: 'HeaderMainCtrl'
 });
 
 angularApp.config(['$routeProvider',

@@ -1,0 +1,35 @@
+User database:
+  EmployeeId*:
+  Name:
+  Username:
+  Password:
+  Position:
+  Permissions:
+    ...
+  PaymentHistory [linked to Payroll]:
+    Year:
+      Week:
+      AnnualBonus:
+  Vacation:
+    Used:
+      Date:
+    Remaining:
+
+Payroll:
+  EmployeeId*:
+  PaymentHistory:
+    Year:
+      Week;
+      AnnualBonus:
+
+
+A. Login --> Determine/Save permissions based on User.Position.
+B. Views:
+  1. Administrative:
+    Permissions: Manager other users/permssions
+  2. Manager:
+    Permissions: View and Edit Others
+  3. Employee:
+    Permissions: View their own information
+  4. Human Resources:
+    Permissions: View all others, except HR
